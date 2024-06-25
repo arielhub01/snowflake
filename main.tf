@@ -16,8 +16,8 @@ terraform {
 
 provider "snowflake" {
   account  = "XU93738.australiaeast.azure"
-  username = var.SNOWFLAKE_USER
-  password = var.SNOWFLAKE_PASSWORD
+  user     = "${var.SNOWFLAKE_USER}"
+  password = "${var.SNOWFLAKE_PASSWORD}"
   role     = "ACCOUNTADMIN"
   region   = "australiaeast.azure"
 }
