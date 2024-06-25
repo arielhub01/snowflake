@@ -15,7 +15,7 @@ terraform {
 }
 
 provider "snowflake" {
-  region = "australiaeast.azure"
+  region = var.SNOWFLAKE_REGION
 }
 
 resource "snowflake_database" "demo_db" {
