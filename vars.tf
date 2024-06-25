@@ -1,5 +1,5 @@
 variable "SNOWFLAKE_REGION" {
-    description = "Snowflake Region"
-    type = string
+  description = "Snowflake Region"
+  type        = string
 
 }
