@@ -1,6 +1,6 @@
 variable "SNOWFLAKE_REGION" {
   description = "Snowflake Region"
   type        = string
-  default = "australiaeast.azure"
+  default     = "australiaeast.azure"
 
 }
