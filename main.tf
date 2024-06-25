@@ -15,7 +15,11 @@ terraform {
 }
 
 provider "snowflake" {
-  region = "australiaeast.azure"
+  account  = "XU93738.australiaeast.azure"
+  username = var.SNOWFLAKE_USER
+  password = var.SNOWFLAKE_PASSWORD
+  role     = "ACCOUNTADMIN"
+  region   = "australiaeast.azure"
 }
 
 resource "snowflake_database" "demo_db" {

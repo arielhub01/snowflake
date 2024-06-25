@@ -4,3 +4,6 @@ variable "SNOWFLAKE_REGION" {
   default     = "australiaeast.azure"
 
 }
+variable "snowflake_username" {}
+variable "SNOWFLAKE_USER" {}
+variable "SNOWFLAKE_PASSWORD" {}
