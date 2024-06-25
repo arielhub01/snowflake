@@ -21,7 +21,7 @@ jobs:
         id: fmt
         run: |
           ls -la *
-          terraform fmt -check -recoursive
+          terraform fmt -check -recursive
 
       - name: Terraform Init
         id: init
