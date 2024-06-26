@@ -19,4 +19,5 @@ provider "snowflake" {
   user     = var.snowflake_user
   password = var.snowflake_password
   role     = "ACCOUNTADMIN"
+  region = "australiaeast.azure"
 }
