@@ -5,7 +5,7 @@ terraform {
        version = "~> 0.92.0"
      }
    }
-  backend "cloud" {
+  cloud {
     organization = "snow-tfc-github-org"
 
     workspaces {
