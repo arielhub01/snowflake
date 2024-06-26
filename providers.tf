@@ -2,7 +2,7 @@ terraform {
    required_providers {
      snowflake = {
        source  = "Snowflake-Labs/snowflake"
-       version = "~> 0.92.0"
+       version = "0.87.3-pre"
      }
    }
   cloud {
@@ -19,5 +19,4 @@ provider "snowflake" {
   user     = var.snowflake_username
   password = var.snowflake_password
   role     = "ACCOUNTADMIN"
-  region = "australiaeast.azure"
 }
