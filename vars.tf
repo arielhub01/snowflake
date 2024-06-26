@@ -1,4 +1,4 @@
-variable "snowflake_user" {
+variable "snowflake_username" {
   description = "User"
   type        = string
   sensitive   = true
