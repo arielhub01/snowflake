@@ -8,6 +8,9 @@ jobs:
   snowflake-terraform-demo:
     name: "Snowflake Terraform Demo Job"
     runs-on: ubuntu-latest
+    env: 
+        snow_user: ${{secrets.SNOWFLAKE_USER}}
+        snow_pass: ${{secrets.SNOWFLAKE_PASSWORD}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
