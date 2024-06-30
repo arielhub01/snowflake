@@ -2,16 +2,9 @@ terraform {
    required_providers {
      snowflake = {
        source  = "Snowflake-Labs/snowflake"
-       version = "0.92.0"
+       version = "0.87.3-pre"
      }
    }
-  cloud {
-    organization = "snow-tfc-github-org"
-
-    workspaces {
-      name = "snow-dev"
-    }
-  }
 }
 
 provider "snowflake" {
