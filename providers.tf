@@ -3,7 +3,6 @@ provider "snowflake" {
   user     = var.snowflake_username
   password = var.snowflake_password
   role     = "ACCOUNTADMIN"
-  region = "australia-east.azure"
   request_timeout = 10
     
 }
