@@ -38,3 +38,7 @@ terraform.rc
 
 #Lock hcl
 .terraform.lock.hcl
+
+#Terraform modules
+.terraform/*
+
