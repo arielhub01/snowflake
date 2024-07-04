@@ -1,23 +1,10 @@
-provider "snowflake" {
-  account  = var.snowflake_account
-  username = var.snowflake_username
-  password = var.snowflake_password
-  region   = var.snowflake_region
-}
-
-# Variables
-variable "snowflake_account" {}
-variable "snowflake_username" {}
-variable "snowflake_password" {}
-variable "snowflake_region" {}
-
 # Warehouses
-resource "snowflake_warehouse" "compute_wh" {
-  name      = "COMPUTE_WH"
-  size      = "XSMALL"
-  auto_suspend = 60  # Auto suspend after 60 seconds of inactivity
-  auto_resume  = true
-}
+# resource "snowflake_warehouse" "compute_wh" {
+#   name      = "COMPUTE_WH"
+#   size      = "XSMALL"
+#   auto_suspend = 60  # Auto suspend after 60 seconds of inactivity
+#   auto_resume  = true
+# }
 
 resource "snowflake_warehouse" "etl_wh" {
   name      = "ETL_WH"
